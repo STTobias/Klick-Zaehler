@@ -1,0 +1,42 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Heller Text */
+    margin: 0;
+    padding: 0;
+  }
+  
+h1 {
+    color: #76c7c0; /* Akzentfarbe für die Überschrift */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+button {
+    background-color: #333333; /* Dunkler Button-Hintergrund */
+    color: #e0e0e0; /* Helle Schriftfarbe */
+    padding: 10px 20px;
+    border: 1px solid #76c7c0; /* Farbakzent */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+button:hover {
+    background-color: #76c7c0; /* Akzentfarbe bei Hover */
+    color: #121212; /* Dunkler Text bei Hover */
+  }
+
+.green {
+    color: green;
+  }
+  
+.yellow {
+    color: orange;
+  }
+  
+.red {
+    color: red;
+  }
+  

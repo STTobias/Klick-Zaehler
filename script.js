@@ -2,6 +2,7 @@ let count = 0;
 let resetCount = 0;
 const maxCount = 10;
 let maxReset = 10;
+let maxResetEnabled = true;
 
 const button = document.getElementById("meinKnopf");
 const counter = document.getElementById("counter");
@@ -33,7 +34,7 @@ resetbutton.addEventListener("click", function(){
     if(resetCount == maxReset){
 
     } else {
-            if(count == 10){
+            if(count = 10){
                 count = 0;
                 counter.textContent = count;
                 resetCount = resetCount +1;
@@ -70,3 +71,16 @@ setbutton.addEventListener("click", function() {
         counter.classList.add("red");
     }
 });
+
+const toggleMaxResetButton = document.getElementById("toggleMaxReset");
+toggleMaxResetButton.addEventListener("click", function() {
+    if(maxResetEnabled === true) {
+        maxReset = Infinity;
+        toggleMaxResetButton.textContent = "Max Reset = An";
+        maxResetEnabled = false;
+    } else {
+        maxReset = 10;
+        toggleMaxResetButton.textContent = "Max Reset = Aus";
+        maxResetEnabled = true;
+    }
+}); 
